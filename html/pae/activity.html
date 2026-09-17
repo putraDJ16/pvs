@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Activity History · PV Solution</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <span class="brandmark"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.7 6.02 6.55.63-4.93 4.37 1.42 6.43L12 16.6l-5.74 3.35 1.42-6.43L2.75 9.15l6.55-.63L12 2.5z"/></svg></span>
+      <div>
+        <div class="sidebar__name">PV Solution</div>
+        <div class="sidebar__tag">Solar Energy Platform</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav__item" href="dashboard.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Dashboard</span></a>
+      <a class="nav__item" href="application.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M19 8v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7z"/><path d="M12 12v5M9.5 14.5h5"/></svg><span>Installation Application</span></a>
+      <a class="nav__item" href="history.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8a1 1 0 0 1 1 1v1H7V4a1 1 0 0 1 1-1z"/><path d="M7 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1"/><path d="M8 11h8M8 15h5"/></svg><span>Application History</span></a>
+      <a class="nav__item" href="update-status.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg><span>Update Application Status</span></a>
+      <a class="nav__item is-active" href="activity.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span>Activity History</span></a>
+    </nav>
+
+    <div class="sidebar__foot">
+      <a class="nav__item" href="../login.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></svg><span>Logout</span></a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <h1 class="h1">Activity History</h1>
+        <p class="topbar__sub">Audit trail of all application activities</p>
+      </div>
+      <div class="user">
+        <div class="user__meta">
+          <div class="user__name">Rina Wulandari</div>
+          <div class="user__role">PAE / Sales</div>
+        </div>
+        <span class="avatar">R</span>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="card filterbar">
+        <div class="filters">
+          <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input class="input" type="search" placeholder="Search by app no., customer, or activity..." aria-label="Search"></div>
+          <select class="select" aria-label="Activity type"><option>All Activity Types</option><option>Status Updated</option><option>Survey Scheduled</option><option>Note Added</option></select>
+          <select class="select" aria-label="User"><option>All Users</option><option>Rina Wulandari</option><option>System</option></select>
+        </div>
+        <div class="filters">
+          <span class="filter-label">From</span><input class="input input--date" type="date" aria-label="From date">
+          <span class="filter-label">To</span><input class="input input--date" type="date" aria-label="To date">
+          <button class="btn btn--ghost" type="button">Reset Filter</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card__head">
+          <h2 class="h3">Activity Log</h2>
+          <span class="count">11 records</span>
+        </div>
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>Date &amp; Time</th><th>User</th><th>Application No.</th><th>Customer</th><th>Activity Type</th><th>Activity Detail</th></tr></thead>
+          <tbody>
+            <tr><td><span class="nowrap">2024-01-15 09:30</span></td><td><span class="label-700">System</span></td><td><span class="ref">PVS-2024-0001</span></td><td>Budi Santoso</td><td><span class="badge badge--submitted">Status Updated</span></td><td>Status changed to Submitted</td></tr>
+            <tr><td><span class="nowrap">2024-01-16 14:15</span></td><td><span class="label-700">Rina Wulandari</span></td><td><span class="ref">PVS-2024-0001</span></td><td>Budi Santoso</td><td><span class="badge badge--submitted">Status Updated</span></td><td>Status changed to Verification</td></tr>
+            <tr><td><span class="nowrap">2024-01-18 10:00</span></td><td><span class="label-700">Rina Wulandari</span></td><td><span class="ref">PVS-2024-0001</span></td><td>Budi Santoso</td><td><span class="badge badge--survey">Survey Scheduled</span></td><td>Survey scheduled for 22 January 2024 at 09:00</td></tr>
+            <tr><td><span class="nowrap">2024-01-22 11:45</span></td><td><span class="label-700">Rina Wulandari</span></td><td><span class="ref">PVS-2024-0001</span></td><td>Budi Santoso</td><td><span class="badge badge--submitted">Status Updated</span></td><td>Status changed to Survey</td></tr>
+            <tr><td><span class="nowrap">2024-01-22 09:30</span></td><td><span class="label-700">System</span></td><td><span class="ref">PVS-2024-0002</span></td><td>Sari Dewi</td><td><span class="badge badge--submitted">Status Updated</span></td><td>Status changed to Submitted</td></tr>
+            <tr><td><span class="nowrap">2024-01-23 16:00</span></td><td><span class="label-700">Rina Wulandari</span></td><td><span class="ref">PVS-2024-0002</span></td><td>Sari Dewi</td><td><span class="badge badge--note">Note Added</span></td><td>Customer requested expedited processing</td></tr>
+            <tr><td><span class="nowrap">2024-01-25 13:30</span></td><td><span class="label-700">Rina Wulandari</span></td><td><span class="ref">PVS-2024-0002</span></td><td>Sari Dewi</td><td><span class="badge badge--submitted">Status Updated</span></td><td>Status changed to Quotation</td></tr>
+            <tr><td><span class="nowrap">2024-02-05 09:00</span></td><td><span class="label-700">System</span></td><td><span class="ref">PVS-2024-0003</span></td><td>Ahmad Fauzi</td><td><span class="badge badge--submitted">Status Updated</span></td><td>Status changed to Submitted</td></tr>
+          </tbody>
+        </table>
+      </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

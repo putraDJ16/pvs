@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home · PV Solution</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <span class="brandmark"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.7 6.02 6.55.63-4.93 4.37 1.42 6.43L12 16.6l-5.74 3.35 1.42-6.43L2.75 9.15l6.55-.63L12 2.5z"/></svg></span>
+      <div>
+        <div class="sidebar__name">PV Solution</div>
+        <div class="sidebar__tag">Solar Energy Platform</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav__item is-active" href="dashboard.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5 12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-7h6v7"/></svg><span>Home</span></a>
+      <a class="nav__item" href="application.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M19 8v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7z"/><path d="M12 12v5M9.5 14.5h5"/></svg><span>Installation Application</span></a>
+      <a class="nav__item" href="history.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8a1 1 0 0 1 1 1v1H7V4a1 1 0 0 1 1-1z"/><path d="M7 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1"/><path d="M8 11h8M8 15h5"/></svg><span>Application History</span></a>
+    </nav>
+
+    <div class="sidebar__foot">
+      <a class="nav__item" href="../login.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></svg><span>Logout</span></a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <h1 class="h1">Home</h1>
+        <p class="topbar__sub">Welcome to PV Solution</p>
+      </div>
+      <div class="user">
+        <div class="user__meta">
+          <div class="user__name">Budi Santoso</div>
+          <div class="user__role">Customer</div>
+        </div>
+        <span class="avatar">B</span>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="hero">
+        <div>
+          <h2 class="h2">Welcome back, Budi!</h2>
+          <p class="hero__sub">You have <strong>2</strong> active applications in progress.</p>
+        </div>
+        <a class="btn btn--accent" href="application.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Apply for Installation</a>
+      </section>
+
+      <section class="stats">
+        <div class="stat"><span class="stat__icon tone-blue"><span class="stat-num">2</span></span><span class="stat__label">Total Applications</span></div>
+        <div class="stat"><span class="stat__icon tone-orange"><span class="stat-num">2</span></span><span class="stat__label">In Progress</span></div>
+        <div class="stat"><span class="stat__icon tone-green"><span class="stat-num">0</span></span><span class="stat__label">Completed</span></div>
+      </section>
+
+      <section class="card">
+        <div class="card__head">
+          <h2 class="h3">Recent Applications</h2>
+          <a class="link-btn" href="history.html">View all</a>
+        </div>
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>Application No.</th><th>Date</th><th>Location</th><th>Capacity</th><th>Status</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td><span class="ref">PVS-2024-0001</span></td><td>2024-01-15</td><td>Jakarta Selatan, DKI Jakarta</td><td>3 kWp</td><td><span class="badge badge--survey">Survey</span></td><td><a class="link-btn" href="history.html">View Detail</a></td></tr>
+            <tr><td><span class="ref">PVS-2024-0004</span></td><td>2024-02-15</td><td>Jakarta Selatan, DKI Jakarta</td><td>4 kWp</td><td><span class="badge badge--verification">Verification</span></td><td><a class="link-btn" href="history.html">View Detail</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Update Application Status · PV Solution</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <span class="brandmark"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.7 6.02 6.55.63-4.93 4.37 1.42 6.43L12 16.6l-5.74 3.35 1.42-6.43L2.75 9.15l6.55-.63L12 2.5z"/></svg></span>
+      <div>
+        <div class="sidebar__name">PV Solution</div>
+        <div class="sidebar__tag">Solar Energy Platform</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav__item" href="dashboard.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Dashboard</span></a>
+      <a class="nav__item" href="application.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M19 8v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7z"/><path d="M12 12v5M9.5 14.5h5"/></svg><span>Installation Application</span></a>
+      <a class="nav__item" href="history.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8a1 1 0 0 1 1 1v1H7V4a1 1 0 0 1 1-1z"/><path d="M7 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1"/><path d="M8 11h8M8 15h5"/></svg><span>Application History</span></a>
+      <a class="nav__item is-active" href="update-status.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg><span>Update Application Status</span></a>
+      <a class="nav__item" href="activity.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span>Activity History</span></a>
+    </nav>
+
+    <div class="sidebar__foot">
+      <a class="nav__item" href="../login.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></svg><span>Logout</span></a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <h1 class="h1">Update Application Status</h1>
+        <p class="topbar__sub">Review and update the progress of customer applications</p>
+      </div>
+      <div class="user">
+        <div class="user__meta">
+          <div class="user__name">Rina Wulandari</div>
+          <div class="user__role">PAE / Sales</div>
+        </div>
+        <span class="avatar">R</span>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="card filterbar">
+        <div class="filters">
+          <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input class="input" type="search" placeholder="Search by application no. or customer name..." aria-label="Search"></div>
+          <select class="select" aria-label="Status"><option>All Statuses</option><option>Submitted</option><option>Verification</option><option>Survey</option><option>Quotation</option><option>In Progress</option><option>Completed</option></select>
+          <input class="input input--date" type="month" aria-label="Month">
+          <button class="btn btn--ghost" type="button">Reset Filter</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card__head">
+          <h2 class="h3">Applications</h2>
+          <span class="count">5 records</span>
+        </div>
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>Application No.</th><th>Customer</th><th>Date</th><th>Location</th><th>Current Status</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td><span class="ref">PVS-2024-0001</span></td><td>Budi Santoso</td><td>2024-01-15</td><td>Jakarta Selatan, DKI Jakarta</td><td><span class="badge badge--survey">Survey</span></td><td><button class="link-btn" type="button" data-modal-open="update-modal">Update</button></td></tr>
+            <tr><td><span class="ref">PVS-2024-0002</span></td><td>Sari Dewi</td><td>2024-01-22</td><td>Bandung, Jawa Barat</td><td><span class="badge badge--quotation">Quotation</span></td><td><button class="link-btn" type="button" data-modal-open="update-modal">Update</button></td></tr>
+            <tr><td><span class="ref">PVS-2024-0003</span></td><td>Ahmad Fauzi</td><td>2024-02-05</td><td>Tangerang, Banten</td><td><span class="badge badge--submitted">Submitted</span></td><td><button class="link-btn" type="button" data-modal-open="update-modal">Update</button></td></tr>
+            <tr><td><span class="ref">PVS-2023-0045</span></td><td>Dewi Rahayu</td><td>2023-11-10</td><td>Jakarta Barat, DKI Jakarta</td><td><span class="badge badge--completed">Completed</span></td><td><button class="link-btn" type="button" data-modal-open="update-modal">Update</button></td></tr>
+            <tr><td><span class="ref">PVS-2024-0004</span></td><td>Budi Santoso</td><td>2024-02-15</td><td>Jakarta Selatan, DKI Jakarta</td><td><span class="badge badge--verification">Verification</span></td><td><button class="link-btn" type="button" data-modal-open="update-modal">Update</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<div class="modal-overlay" id="update-modal">
+  <div class="modal modal--mid">
+    <div class="modal__head">
+      <h2 class="h3">Update Application Status</h2>
+      <button class="modal__close" type="button" data-modal-close aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <div class="modal__body">
+      <div class="summary-panel">
+        <div><div class="detail__k">Application No.</div><div class="detail__v strong">PVS-2024-0001</div></div>
+        <div><div class="detail__k">Customer</div><div class="detail__v strong">Budi Santoso</div></div>
+        <div><div class="detail__k">Location</div><div class="label-700" style="font-weight:400">Jakarta Selatan, DKI Jakarta</div></div>
+        <div><div class="detail__k">Current Status</div><div style="margin-top:4px"><span class="badge badge--survey">Survey</span></div></div>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="new-status">New Status <span class="req">*</span></label>
+        <select class="select" id="new-status" name="new-status">
+          <option value="" selected>Select new status...</option>
+          <option>Verification</option><option>Survey</option><option>Quotation</option>
+          <option>In Progress</option><option>Completed</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="followup">Follow-up Date</label>
+        <input class="input" type="date" id="followup" name="followup">
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="notes">Notes</label>
+        <textarea class="textarea" id="notes" name="notes" style="min-height:84px" placeholder="Enter any notes about this status update..."></textarea>
+      </div>
+
+      <div class="note" style="display:block"><strong>Note:</strong> Saving this change will automatically create an activity record in Activity History.</div>
+    </div>
+    <div class="modal__foot">
+      <button class="btn btn--ghost" type="button" data-modal-close>Cancel</button>
+      <button class="btn btn--primary" type="button" style="opacity:.5">Save Changes</button>
+    </div>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign In · PV Solution</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="auth">
+
+  <!-- ============================================ Panel kiri: brand ===== -->
+  <aside class="auth__aside">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+
+    <div class="auth__inner">
+      <div class="auth__brand">
+        <span class="brandmark brandmark--lg">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.5l2.7 6.02 6.55.63-4.93 4.37 1.42 6.43L12 16.6l-5.74 3.35 1.42-6.43L2.75 9.15l6.55-.63L12 2.5z"></path>
+          </svg>
+        </span>
+        <div>
+          <div class="name">PV Solution</div>
+          <div class="tag">Solar Energy Platform</div>
+        </div>
+      </div>
+
+      <h1 class="display auth__headline">Power Your Future with Solar Energy</h1>
+      <p class="auth__lead">Manage your solar panel installation applications and track progress from submission to completion.</p>
+    </div>
+
+    <div class="auth__stats">
+      <div class="auth__stat"><div class="n">2,400+</div><div class="k">Applications</div></div>
+      <div class="auth__stat"><div class="n">1,850+</div><div class="k">Installations</div></div>
+      <div class="auth__stat"><div class="n">12,000+</div><div class="k">kWp Installed</div></div>
+    </div>
+  </aside>
+
+  <!-- ============================================ Panel kanan: form ===== -->
+  <main class="auth__panel">
+    <div class="auth__form">
+
+      <div class="head">
+        <h2 class="display-sm">Sign in to your account</h2>
+        <p class="sub">Access the PV Solution platform</p>
+      </div>
+
+      <!-- Di Figma layer ini di-hide (visible: false). Dipertahankan agar
+           kontennya tidak hilang; hapus [hidden] untuk menampilkannya. -->
+      <div class="demo-box" hidden>
+        <div class="t">Demo Accounts (password: <code>password123</code>)</div>
+        <div class="row">Customer: budi@email.com</div>
+        <div class="row">PAE/Sales: rina.pae@pvsolution.id</div>
+      </div>
+
+      <form action="customer/dashboard.html">
+        <div class="field">
+          <label class="field__label" for="identifier">Email or Phone Number</label>
+          <input class="input" id="identifier" name="identifier" type="text" placeholder="Enter email or phone number" autocomplete="username">
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="password">Password</label>
+          <div class="input-group">
+            <input class="input" id="password" name="password" type="password" placeholder="Enter password" autocomplete="current-password">
+            <button class="input-group__btn" type="button" data-toggle-password aria-label="Show password">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none" aria-hidden="true">
+                <path d="M10.7 5.1A10.4 10.4 0 0 1 12 5c6.5 0 10 7 10 7a18 18 0 0 1-2.2 3.1M6.6 6.6A18 18 0 0 0 2 12s3.5 7 10 7a10.4 10.4 0 0 0 4.2-.9"></path>
+                <path d="m2 2 20 20"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="forgot"><a href="#">Forgot password?</a></div>
+        </div>
+
+        <button class="btn btn--primary btn--block" type="submit">Sign In</button>
+      </form>
+
+      <p class="auth__foot">New to PV Solution? <a href="register.html">Create an account</a></p>
+
+    </div>
+  </main>
+
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Installation Application · PV Solution</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <span class="brandmark"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.7 6.02 6.55.63-4.93 4.37 1.42 6.43L12 16.6l-5.74 3.35 1.42-6.43L2.75 9.15l6.55-.63L12 2.5z"/></svg></span>
+      <div>
+        <div class="sidebar__name">PV Solution</div>
+        <div class="sidebar__tag">Solar Energy Platform</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav__item" href="dashboard.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Dashboard</span></a>
+      <a class="nav__item is-active" href="application.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M19 8v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7z"/><path d="M12 12v5M9.5 14.5h5"/></svg><span>Installation Application</span></a>
+      <a class="nav__item" href="history.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8a1 1 0 0 1 1 1v1H7V4a1 1 0 0 1 1-1z"/><path d="M7 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1"/><path d="M8 11h8M8 15h5"/></svg><span>Application History</span></a>
+      <a class="nav__item" href="update-status.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg><span>Update Application Status</span></a>
+      <a class="nav__item" href="activity.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span>Activity History</span></a>
+    </nav>
+
+    <div class="sidebar__foot">
+      <a class="nav__item" href="../login.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></svg><span>Logout</span></a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <h1 class="h1">Installation Application</h1>
+        <p class="topbar__sub">Create application on behalf of a customer</p>
+      </div>
+      <div class="user">
+        <div class="user__meta">
+          <div class="user__name">Rina Wulandari</div>
+          <div class="user__role">PAE / Sales</div>
+        </div>
+        <span class="avatar">R</span>
+      </div>
+    </header>
+
+    <main class="content">
+      <form class="form-stack" action="history.html">
+        <div class="lookup">
+          <div class="lookup__title">PLN Customer ID Lookup (Optional)</div>
+          <div class="lookup__row">
+            <input class="input" type="text" placeholder="Enter PLN Customer ID (try: 5219038201)" aria-label="PLN Customer ID">
+            <button class="btn btn--primary" type="button">Check ID</button>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h2 class="section-title">Customer Information</h2>
+          <div class="form-grid">
+            <div class="field"><label class="field__label" for="fullname">Full Name <span class="req">*</span></label><input class="input" type="text" id="fullname" name="fullname" placeholder="Enter full name"></div>
+            <div class="field"><label class="field__label" for="pln-id">PLN Customer ID</label><input class="input" type="text" id="pln-id" name="pln-id" placeholder="Optional"></div>
+            <div class="field"><label class="field__label" for="phone">Phone Number <span class="req">*</span></label><input class="input" type="tel" id="phone" name="phone" placeholder="0812-xxxx-xxxx"></div>
+            <div class="field"><label class="field__label" for="email">Email <span class="req">*</span></label><input class="input" type="email" id="email" name="email" placeholder="customer@email.com"></div>
+            <div class="field"><label class="field__label" for="user-type">Electricity User Type <span class="req">*</span></label><select class="select" id="user-type" name="user-type"><option value="" selected>Select type...</option><option>Rumah Tangga (R1)</option><option>Rumah Tangga (R2)</option><option>Bisnis (B1)</option><option>Industri (I1)</option></select></div>
+            <div class="field"><label class="field__label" for="current-capacity">Current Power Capacity <span class="req">*</span></label><select class="select" id="current-capacity" name="current-capacity"><option value="" selected>Select capacity...</option><option>900 VA</option><option>1300 VA</option><option>2200 VA</option><option>3500 VA</option><option>&gt; 3500 VA</option></select></div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h2 class="section-title">Installation Location</h2>
+          <div class="form-grid">
+            <div class="field"><label class="field__label" for="province">Province <span class="req">*</span></label><select class="select" id="province" name="province"><option value="" selected>Select province...</option><option>DKI Jakarta</option><option>Jawa Barat</option><option>Jawa Tengah</option><option>Jawa Timur</option><option>Banten</option></select></div>
+            <div class="field"><label class="field__label" for="city">City / Regency <span class="req">*</span></label><input class="input" type="text" id="city" name="city" placeholder="e.g. Jakarta Selatan"></div>
+            <div class="field"><label class="field__label" for="district">District <span class="req">*</span></label><input class="input" type="text" id="district" name="district" placeholder="e.g. Mampang Prapatan"></div>
+            <div class="field"><label class="field__label" for="subdistrict">Subdistrict <span class="req">*</span></label><input class="input" type="text" id="subdistrict" name="subdistrict" placeholder="e.g. Mampang"></div>
+            <div class="field span-2">
+              <label class="field__label" for="address">Full Address <span class="req">*</span></label>
+              <textarea class="textarea" id="address" name="address" placeholder="Enter complete installation address"></textarea>
+            </div>
+            <div class="field"><label class="field__label" for="planned-capacity">Planned Solar Capacity <span class="req">*</span></label><select class="select" id="planned-capacity" name="planned-capacity"><option value="" selected>Select capacity...</option><option>1 kWp</option><option>2 kWp</option><option>3 kWp</option><option>4 kWp</option><option>5 kWp</option></select></div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <a class="btn btn--ghost" href="dashboard.html">Cancel</a>
+          <button class="btn btn--primary" type="submit">Submit Application</button>
+        </div>
+      </form>
+    </main>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>
