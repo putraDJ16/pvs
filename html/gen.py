@@ -92,7 +92,7 @@ def sidebar(role, active):
     </nav>
 
     <div class="sidebar__foot">
-      <a class="nav__item" href="../login.html">{icon("logout")}<span>Logout</span></a>
+      <a class="nav__item" href="../index.html">{icon("logout")}<span>Logout</span></a>
     </div>
   </aside>"""
 
