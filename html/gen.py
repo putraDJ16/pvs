@@ -28,6 +28,7 @@ ICONS = {
  "checkCircle": (S, '<circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 4.5-5"/>'),
  "upload":  (S, '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 9 5-5 5 5"/><path d="M12 4v12"/>'),
  "info":    (S, '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5h.01"/>'),
+ "menu":    (S, '<path d="M3 6h18M3 12h18M3 18h18"/>'),
 }
 
 def icon(name, size=20):
@@ -99,7 +100,8 @@ def topbar(role, title, sub):
     name, roletxt, initial = USER[role]
     return f"""
     <header class="topbar">
-      <div>
+      <button class="menu-toggle" type="button" aria-label="Open menu" data-nav-toggle>{icon("menu")}</button>
+      <div class="grow">
         <h1 class="h1">{title}</h1>
         <p class="topbar__sub">{sub}</p>
       </div>
@@ -114,6 +116,7 @@ def topbar(role, title, sub):
 
 def page(path, title, role, active, topbar_title, topbar_sub, content, modals="", depth=1):
     html = (head(title, depth) + '\n\n<div class="app">' + sidebar(role, active) +
+            '\n\n  <div class="nav-backdrop" data-nav-close></div>' +
             '\n\n  <div class="main">' + topbar(role, topbar_title, topbar_sub) +
             '\n\n    <main class="content">\n' + content + '\n    </main>\n  </div>\n</div>\n' +
             modals + f'\n<script src="{"../"*depth}assets/app.js"></script>\n</body>\n</html>\n')

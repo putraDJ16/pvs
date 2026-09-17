@@ -52,6 +52,28 @@
     });
   });
 
+  /* ---- Mobile sidebar toggle (hamburger di topbar) ---- */
+  var appEl = document.querySelector(".app");
+  if (appEl) {
+    function closeNav() {
+      appEl.classList.remove("is-nav-open");
+      document.body.classList.remove("nav-open");
+    }
+    document.addEventListener("click", function (e) {
+      if (e.target.closest("[data-nav-toggle]")) {
+        var open = appEl.classList.toggle("is-nav-open");
+        document.body.classList.toggle("nav-open", open);
+        return;
+      }
+      if (e.target.closest("[data-nav-close]") || e.target.closest(".nav__item")) {
+        closeNav();
+      }
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeNav();
+    });
+  }
+
   /* ---- Select: warna teks mengikuti ada/tidaknya pilihan ---- */
   document.querySelectorAll("select.select").forEach(function (sel) {
     function sync() {
